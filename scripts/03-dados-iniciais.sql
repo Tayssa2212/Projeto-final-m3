@@ -25,17 +25,17 @@ INSERT INTO freelancer (usuario_id, portfolio, avaliacao, experiencia_profission
 (10, 'portfolio_link_10', 4.4, '5 anos de experiência em branding', 'Fortaleza');
 
 -- Inserindo habilidades
-INSERT INTO habilidade (competencia) VALUES
-('Design Gráfico'),
-('Desenvolvimento Web'),
-('SEO'),
-('Marketing Digital'),
-('Edição de Vídeo'),
-('Fotografia'),
-('Copywriting'),
-('Branding'),
-('Gestão de Projetos'),
-('UI/UX Design');
+INSERT INTO habilidade (competencia, fluencia, tecnologias, soft_skills) VALUES
+('Design Gráfico','Spanish','Figma','Detalhista'),
+('Desenvolvimento Web','Ingles','React','Curioso'),
+('SEO','Ingles','Promps','Aplicado'),
+('Marketing Digital','Spanish','Instagram','Estudioso'),
+('Edição de Vídeo','portugues','Photoshop','Detalhista'),
+('Fotografia', 'portugues', 'Photoshop', 'Observador'),
+('Copywriting','Ingles', 'Web', 'Leitor'),
+('Branding','Spanish','Instagram','Comunicador'),
+('Gestão de Projetos','portugues','Scrum','Organizado'),
+('UI/UX Design','Ingles','Figma','Estudioso');
 
 -- Associando freelancers com habilidades
 INSERT INTO freelancer_habilidade (freelancer_id, habilidade_id, nivel) VALUES

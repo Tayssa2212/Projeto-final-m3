@@ -21,6 +21,9 @@ CREATE TABLE freelancer (
 CREATE TABLE habilidade (
     id INT PRIMARY KEY AUTO_INCREMENT,
     competencia VARCHAR(50),
+    fluencia VARCHAR(50),
+    tecnologias VARCHAR(50),
+    soft_skills VARCHAR(50) NOT NULL,
     criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -93,6 +96,5 @@ CREATE TABLE projetos (
     descricao TEXT,
     id_cliente INT,
     data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (id_cliente) REFERENCES usuarios(id) ON DELETE CASCADE
-);
+    FOREIGN KEY (id_cliente) REFERENCES usuario(id) ON DELETE CASCADE
 );
